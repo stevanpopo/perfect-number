@@ -15,7 +15,7 @@ $(() => {
   function getClassification(integer) {
     // error catchers
     if(isNaN(integer)) return 'Sorry, you need to input a number to get a correct evaluation.';
-    if(integer < 0) return 'Sorry, you must input a positive number to get a correct evaluation.';
+    if(integer <= 1) return 'Sorry, you must input a positive number greater than one to get a correct evaluation.';
 
     const aliquot = [];
     // check each of the divisors. Can stop at int/2 for performance
